@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <form enctype="multipart/form-data">
+      <input id="upload" type="file" name="files[]" />
+    </form>
+
+    <form id="selected-page">
+      <select id="sheet-paages"></select>
+      <button type="submit">Enviar</button>
+    </form>
+    <pre>
+    <div id="displayJsonContent">
+
+    </div>
+    </pre>
+    <div class="player-card-wrapper">
+      <!-- <div class="player-card">
+        <div class="player-card-text">
+          <h6><span>Timestamp:</span> 6/4/2024 23:39:21</h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span>Qual o seu nome? (Nick e nome de personagem):</span> nick -
+            vodsunz || personagem - Kish
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Você passa quanto tempo em media dentro da cúpula (quanto tempo
+              passa on? horas e dias da semana):</span
+            >
+            Normalmente umas 3 horas por
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Qual sua capacidade de se defender e defender aos outros? (você
+              sabe pvp ou tem equipamentos bons?):</span
+            >
+            Não tenho equipamentos bons, mas se tivesse, saberia me defender
+            razoavelmente.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Você costuma se envolver em problemas? (se sim, de
+              exemplos):</span
+            >
+            Não.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span>Você sabe mexer com maquinas? (o quanto vc sabe?):</span> Sim,
+            coisas muito simples e básicas, como uma furadeira, por exemplo.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Você sabe construir? (independentemente de saber ou não, você
+              gosta de construir?):</span
+            >
+            Sim, gosto.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Você tem uma moradia estável? (e você mora com mais
+              pessoas?):</span
+            >
+            Sim. Não.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6><span>Você gosta de cozinhar?:</span> Sim, é um hobby.</h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span>Você gosta de animais (Se sim, quais)?:</span> Sim, raposas.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Você já teve experiência com crianças em sua simulação? (se sim
+              conte um pouco sobre):</span
+            >
+            Sim, já que fui uma. Não tive boas experiências já me sentia
+            diferente e excluído do resto, sendo difícil de interagir e se
+            enturmar com elas.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Em uma escala de 1 a 10 quão paciente você é? (sendo 1 sem
+              paciência alguma e 10 sendo uma pessoa q passaria o tempo q fosse
+              pra ajudar ou explicar algo a alguém):</span
+            >
+            5
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span>Alguma duvida ou algo a acrescentar?:</span> Respondi isso
+            como meu personagem responderia viu
+            <br />
+            Obrigado pela pesquisa e pelo tempo de vocês nesse projeto, tá sendo
+            bem divertido participar, beijos 🫶🫶
+          </h6>
+        </div>
+      </div>
+      <div class="player-card">
+        <div class="player-card-text">
+          <h6><span>Timestamp:</span> 6/4/2024 23:39:21</h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span>Qual o seu nome? (Nick e nome de personagem):</span> nick -
+            vodsunz || personagem - Kish
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Você passa quanto tempo em media dentro da cúpula (quanto tempo
+              passa on? horas e dias da semana):</span
+            >
+            Normalmente umas 3 horas por
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Qual sua capacidade de se defender e defender aos outros? (você
+              sabe pvp ou tem equipamentos bons?):</span
+            >
+            Não tenho equipamentos bons, mas se tivesse, saberia me defender
+            razoavelmente.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Você costuma se envolver em problemas? (se sim, de
+              exemplos):</span
+            >
+            Não.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span>Você sabe mexer com maquinas? (o quanto vc sabe?):</span> Sim,
+            coisas muito simples e básicas, como uma furadeira, por exemplo.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Você sabe construir? (independentemente de saber ou não, você
+              gosta de construir?):</span
+            >
+            Sim, gosto.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Você tem uma moradia estável? (e você mora com mais
+              pessoas?):</span
+            >
+            Sim. Não.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6><span>Você gosta de cozinhar?:</span> Sim, é um hobby.</h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span>Você gosta de animais (Se sim, quais)?:</span> Sim, raposas.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Você já teve experiência com crianças em sua simulação? (se sim
+              conte um pouco sobre):</span
+            >
+            Sim, já que fui uma. Não tive boas experiências já me sentia
+            diferente e excluído do resto, sendo difícil de interagir e se
+            enturmar com elas.
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span
+              >Em uma escala de 1 a 10 quão paciente você é? (sendo 1 sem
+              paciência alguma e 10 sendo uma pessoa q passaria o tempo q fosse
+              pra ajudar ou explicar algo a alguém):</span
+            >
+            5
+          </h6>
+        </div>
+        <div class="player-card-text">
+          <h6>
+            <span>Alguma duvida ou algo a acrescentar?:</span> Respondi isso
+            como meu personagem responderia viu
+            <br />
+            Obrigado pela pesquisa e pelo tempo de vocês nesse projeto, tá sendo
+            bem divertido participar, beijos 🫶🫶
+          </h6>
+        </div>
+      </div> -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+    <script>
+      let jsonSheet = [];
+
+      var ExcelToJSON = function () {
+        this.parseExcel = function (file) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            var data = e.target.result;
+            var workbook = XLSX.read(data, {
+              type: "binary",
+            });
+            var i = -1;
+            workbook.SheetNames.forEach(function (sheetName) {
+              i++;
+
+              $("#sheet-paages").append(
+                '<option value="' + i + '">' + sheetName + "</option>"
+              );
+
+              var XL_row_object = XLSX.utils.sheet_to_row_object_array(
+                workbook.Sheets[sheetName]
+              );
+              var json_object = JSON.stringify(XL_row_object);
+
+              jsonSheet.push(JSON.parse(json_object));
+            });
+          };
+
+          reader.onerror = function (ex) {
+            console.log(ex);
+          };
+
+          reader.readAsBinaryString(file);
+        };
+      };
+
+      function handleFileSelect(evt) {
+        var files = evt.target.files;
+        var xl2json = new ExcelToJSON();
+        xl2json.parseExcel(files[0]);
+      }
+
+      $(document).ready(function () {
+        $("#selected-page").submit(function (e) {
+          e.preventDefault();
+          const selectedPage = $("#sheet-paages").val();
+
+          const selectedPageonSheet = jsonSheet[selectedPage];
+
+          // $("#displayJsonContent").html(
+          //   JSON.stringify(selectedPageonSheet, undefined, 4)
+          // );
+
+          const playerCardWrapper = document.querySelector(
+            ".player-card-wrapper"
+          );
+
+          selectedPageonSheet.forEach((player) => {
+            const playerCard = document.createElement("div");
+            playerCard.classList.add("player-card");
+
+            const playerCardText = document.createElement("div");
+            playerCardText.classList.add("player-card-text");
+
+            const playerCardTextContent = document.createElement("h6");
+
+            Object.entries(player).forEach(([key, value]) => {
+              const span = document.createElement("span");
+              span.textContent = key + ": ";
+              const textNode = document.createTextNode(value);
+              playerCardTextContent.appendChild(span);
+              playerCardTextContent.appendChild(textNode);
+            });
+
+            playerCardText.appendChild(playerCardTextContent);
+            playerCard.appendChild(playerCardText);
+            playerCardWrapper.appendChild(playerCard);
+          });
+
+          console.log(selectedPageonSheet);
+        });
+      });
+
+      //     {
+      //     "Timestamp": "6/4/2024 23:39:21",
+      //     "Qual o seu nome? (Nick e nome de personagem)": "nick - vodsunz || personagem - Kish",
+      //     "Você passa quanto tempo em media dentro da cúpula (quanto tempo passa on? horas e dias da semana)": "Normalmente umas 3 horas por dia, as vezes de manhã e as vezes de noite, em finais de semana ou feriados e as vezes (mas bem raramente) em dias de semana.",
+      //     "Qual sua capacidade de se defender e defender aos outros? (você sabe pvp ou tem equipamentos bons?)": "Não tenho equipamentos bons, mas se tivesse, saberia me defender razoavelmente.",
+      //     "Você costuma se envolver em problemas? (se sim, de exemplos)": "Não.",
+      //     "Você sabe mexer com maquinas? (o quanto vc sabe?)": "Sim, coisas muito simples e básicas, como uma furadeira, por exemplo.",
+      //     "Você sabe construir? (independentemente de saber ou não, você gosta de construir?)": "Sim, gosto.",
+      //     "Você tem uma moradia estável? (e você mora com mais pessoas?)": "Sim. Não.",
+      //     "Você gosta de cozinhar?": "Sim, é um hobby.",
+      //     "Você gosta de animais (Se sim, quais)?": "Sim, raposas.",
+      //     "Você já teve experiência com crianças em sua simulação? (se sim conte um pouco sobre)": "Sim, já que fui uma. Não tive boas experiências já me sentia diferente e excluído do resto, sendo difícil de interagir e se enturmar com elas.",
+      //     "Em uma escala de 1 a 10 quão paciente você é? (sendo 1 sem paciência alguma e 10 sendo uma pessoa q passaria o tempo q fosse pra ajudar ou explicar algo a alguém)": "5",
+      //     "Alguma duvida ou algo a acrescentar?": "Respondi isso como meu personagem responderia viu\nObrigado pela pesquisa e pelo tempo de vocês nesse projeto, tá sendo bem divertido participar, beijos 🫶🫶"
+      // },
+    </script>
+    <script>
+      document
+        .getElementById("upload")
+        .addEventListener("change", handleFileSelect, false);
+    </script>
+  </body>
+</html>

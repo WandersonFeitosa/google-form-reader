@@ -1,0 +1,27 @@
+body * {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+body span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.player-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px;
+  gap: 15px;
+}
+.player-card {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 768px) {
+  .player-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
